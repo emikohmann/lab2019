@@ -9,3 +9,5 @@
 * Módulo 7: [Paralelismo y Concurrencia en Go](https://docs.google.com/presentation/d/19DHg7Hk8_Fzw32UuziTjv2OTCKFyBqPWCJBNYVdIXIw/edit?usp=sharing)
 * Módulo 8: [Creación de una API en Go](https://docs.google.com/presentation/d/1PEzRftXHvwKKZJUJx51cprImbTIZTo4ZeVkVf5bC4_o/edit?usp=sharing)
 * Módulo 9: [Testing](https://docs.google.com/presentation/d/152FAp4Ec_VR8-S2VzGZt5pz57dfkrZqdr3E7RQVaGFg/edit?usp=sharing)
+
+* [Ejercicios](https://docs.google.com/document/d/1EAFxe4Ey8QK9hFzJ8LcDpXICLwlEtNp9-lZS0Z7ngrc/edit?usp=sharing)
