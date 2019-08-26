@@ -7,12 +7,10 @@ import (
 
 func main() {
 	start := time.Now()
-	fmt.Println("Procesando")
+	fmt.Println("Processing")
 
 	ch := make(chan int, 2)
 
-	// go routine lanza funcion anonima
-	// cgr: control go routine
 	go func() {
 		values := make([]int, 0)
 		for i := 0; i < 2; i++ {
@@ -23,8 +21,8 @@ func main() {
 		for _, v := range values {
 			result += v
 		}
-		fmt.Println("Resultado", result)
-		fmt.Println("Tiempo", time.Since(start))
+		fmt.Println("Result", result)
+		fmt.Println("Time", time.Since(start))
 	}()
 
 	go computeA(ch)
@@ -35,7 +33,7 @@ func computeA(ch chan int) {
 	time.Sleep(
 		5 * time.Second,
 	)
-	fmt.Println("Retorno valor", 5)
+	fmt.Println("Return value", 5)
 	ch <- 5
 }
 
@@ -43,6 +41,6 @@ func computeB(ch chan int) {
 	time.Sleep(
 		3 * time.Second,
 	)
-	fmt.Println("Retorno valor", 6)
+	fmt.Println("Return value", 6)
 	ch <- 6
 }

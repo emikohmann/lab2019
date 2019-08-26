@@ -15,7 +15,7 @@ type Site struct {
 
 func main() {
     var siteID string
-    fmt.Print("Ingrese Site ID: ")
+    fmt.Print("Enter Site ID: ")
     fmt.Scan(&siteID)
 
     response, err := http.Get(

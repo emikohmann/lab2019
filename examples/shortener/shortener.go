@@ -17,7 +17,6 @@ const (
 
 var (
 	letterRunes = []rune("ghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789")
-
 	mappings = make([]Mapping, 0)
 )
 
@@ -37,7 +36,7 @@ func main() {
 
 func EnterData() {
 	for i := 0; i < urlCount; i++ {
-		fmt.Print(fmt.Sprintf("Ingresa url %d: ", i+1))
+		fmt.Print(fmt.Sprintf("Enter url %d: ", i+1))
 
 		var url string
 		fmt.Scan(&url)
@@ -63,14 +62,14 @@ func EnterData() {
 }
 
 func FindURL() {
-	fmt.Print("Ingresa hash: ")
+	fmt.Print("Enter hash: ")
 	var hash string
 	fmt.Scan(&hash)
 	for _, m := range mappings {
 		if m.Hash == hash {
-			fmt.Println(fmt.Sprintf("Url encontrada: %s", m.URL))
+			fmt.Println(fmt.Sprintf("Found URL: %s", m.URL))
 			return
 		}
 	}
-	fmt.Println("Url no encontrada")
+	fmt.Println("URL not found")
 }
