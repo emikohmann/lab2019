@@ -42,4 +42,3 @@ func main() {
     fmt.Println("Country: ", site.CountryID)
     fmt.Println("Currency: ", site.DefaultCurrencyID)
 }
-
